@@ -23,7 +23,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 @EnableCircuitBreaker
 @EnableHystrixDashboard
-public class BookCatalogApplication {
+public class GroupApplication {
 
     @Bean
     @LoadBalanced
@@ -47,7 +47,7 @@ public class BookCatalogApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(BookCatalogApplication.class, args);
+        SpringApplication.run(GroupApplication.class, args);
     }
 
 }

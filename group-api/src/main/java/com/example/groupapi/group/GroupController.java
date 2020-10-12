@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/group/info")
-public class ProductController {
+public class GroupController {
 
     @GetMapping("/{groupId}")
     public Group getProductById(@PathVariable("groupId") String groupId){
